@@ -56,7 +56,7 @@ describe('[Main Elements Render]', function() {
 				sideNav.spotlightSearchPopUp.isVisible().should.be.true;
 			});
 
-			it.skip('it should remove the list when the spotlight loses focus', () => {
+			it('it should remove the list when the spotlight loses focus', () => {
 				sideNav.spotlightSearchPopUp.waitForVisible(5000);
 				sideNav.spotlightSearchPopUp.isVisible().should.be.true;
 				mainContent.messageInput.click();
@@ -72,7 +72,7 @@ describe('[Main Elements Render]', function() {
 				sideNav.spotlightSearchPopUp.isVisible().should.be.true;
 			});
 
-			it.skip('it should remove the text on the spotlight and the list when lost focus', () => {
+			it('it should remove the text on the spotlight and the list when lost focus', () => {
 				sideNav.spotlightSearchPopUp.waitForVisible(5000);
 				sideNav.spotlightSearchPopUp.isVisible().should.be.true;
 				mainContent.messageInput.click();
@@ -237,7 +237,7 @@ describe('[Main Elements Render]', function() {
 				});
 			});
 
-			describe.skip('Members Tab:', () => {
+			describe('Members Tab:', () => {
 				before(()=> {
 					flexTab.operateFlexTab('members', true);
 				});
